@@ -1,0 +1,29 @@
+<!-- You can do things with local storage to maintain state
+ cookies, story key value, session storage, etc
+ In application on the browser you have 
+* local storage
+* session storage
+* IndexedDB
+* Web SQL
+* Cookies 
+* cache storage
+* application cache -->
+
+<html>
+    <head>
+        <script>
+            const user = JSON.stringify({
+                firstName: 'Rich',
+                lastName: 'Last'
+            });
+
+            localStorage.setItem('user', user);
+            console.log(localStorage.getItem('user'));
+            console.log(JSON.parse(localStorage.getItem('user')));
+            //const firstName = localStorage.getItem('firstName');
+            //console.log("firstName");
+            //localStorage.removeItem('firstName');
+            // localStorage.setItem('firstName', 'Rich');
+        </script>
+    </head>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div id="id-examples" class="some-class">ID Example</div>
+
+        <h1 class="some-class">Heading 1</h1>
+        <h1 class="some-class">Heading 2</h1>
+
+        <ul>
+            <li class="some-class">Li Example1</li>
+            <li class="some-class">Li Example2</li>
+            <li class="some-class">Li Example3</li>
+        </ul>
+    </body>
+    <script>
+        console.log(document.getElementById("id-examples"));
+        console.log(document.getElementsByTagName("li"));
+        console.log(document.getElementsByClassName("some-class"));
+
+        // This is significantally slower
+        console.log(document.querySelector('h1.some-class'));
+        console.log(document.querySelectorAll('h1.some-class'));
+    </script>
+</html>
